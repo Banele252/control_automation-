@@ -2,7 +2,9 @@
 \usepackage{graphicx} % Required for inserting images
 
 \title{Control automation}
-\author{banele mdluli}
+\author{Author: Banele Mdluli\\
+       Version:1.0.0\\
+       Approval: Pending}
 \date{February 2026}
 
 \begin{document}
@@ -29,8 +31,58 @@ The project objectives are targets that must be reached for the project to be co
 \end{itemize}
 \section{Requirements}
 \subsection{Functional requirements}
-\subsection{Non functional requirements}
-\subsection{Technical requirements}
+\begin{itemize}
+    \item Control outcome monitoring and recording requirement
+    \begin{itemize}
+        \item Extract data from a database using a predefined logic written in SQL
+        \item Calculate aggregations such as record count, total transaction value, record count per category (where applicable) and dispersion. Store the results in a database.
+        \item Create visuals based on the output and take a snapshot, save it in the database.
+    \end{itemize}
+    \item Control outcome analysis requirement
+    \begin{itemize}
+        \item Provide broader analysis (overall) of the recorded control outcome using AI agents.
+        \item A user should to interact with the AI agent.
+        \item Log in page
+    \end{itemize} 
+\end{itemize}
+\subsection{Non-Function requirement}
+\begin{itemize}
+    \item Database and data engineering tools
+    \begin{itemize}
+        \item Superbase to store raw data
+        \item Azure data factory to trigger jobs
+        \item Databricks to create externally managed tables for control performance.
+    \end{itemize}
+    \item A.I agent activities 
+    \begin{itemize}
+        \item Review record control outcomes
+        \item Provide users with response within 2 mins.
+        \item Admitt when info is not available.
+    \end{itemize}
+\end{itemize}
+\subsection{Technical requirement}
+    \begin{itemize}
+        \item A.I agent framework (\textbf{To be confirmed})
+        \item API dev framework
+        \begin{itemize}
+            \item Fast API and documentation OpenAPI (Swagger)
+        \end{itemize}
+        \item Frontend 
+        \begin{itemize}
+            \item React
+        \end{itemize}
+        \item Environment packaging 
+        \begin{itemize}
+            \item docker
+        \end{itemize}
+        \item Deployement platform, code repo and CI/CD
+        \begin{itemize}
+            \item Azure
+            \item Github
+            \item Github actions  (switch to Azure Dev Ops later)
+    \end{itemize}
+ \end{itemize}
+
 \section{Design}
 \section{Methodology}
 \section{Discussion}
