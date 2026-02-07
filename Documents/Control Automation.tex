@@ -2,15 +2,34 @@
 \usepackage{graphicx} % Required for inserting images
 
 \title{Control automation}
-\author{Author: Banele Mdluli\\
-       Version:1.0.0\\
-       Approval: Pending}
+\author{Author: Banele Mdluli}
 \date{February 2026}
 
 \begin{document}
 
 \maketitle
 \newpage
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Huge\bfseries Version tracking\par}
+    \vspace{2cm}
+    
+    % Add a table
+    \begin{tabular}{|r|l|l|l|l|}
+        \hline
+        \textbf{Version} & \textbf{Approvers} & \textbf{Approval status} & \textbf{Comments} &\textbf{Date} \\
+        \hline
+          1.0.0 & Banele Mdluli & Pending & compiling documentation & February 2026\\
+        \hline
+    \end{tabular}
+    
+    \vfill
+    
+\end{titlepage}
+\newpage
+
 \section{Summary}
 Control automation is a project to automate control performance. The automation will cover all processes associated with control performance. This includes frequent data extraction, logic implementation, and exception recording. Beyond control performance, an automation management console will be created to interact with various automation parts.
 
@@ -52,6 +71,7 @@ The project objectives are targets that must be reached for the project to be co
         \item Superbase to store raw data
         \item Azure data factory to trigger jobs
         \item Databricks to create externally managed tables for control performance.
+        \item Postgres to store Control outcome results and interaction logs
     \end{itemize}
     \item A.I agent activities 
     \begin{itemize}
@@ -77,6 +97,7 @@ The project objectives are targets that must be reached for the project to be co
         \end{itemize}
         \item Deployement platform, code repo and CI/CD
         \begin{itemize}
+            
             \item Azure
             \item Github
             \item Github actions  (switch to Azure Dev Ops later)
@@ -84,6 +105,9 @@ The project objectives are targets that must be reached for the project to be co
  \end{itemize}
 
 \section{Design}
+ \subsection{HLD (High level design)}
+ \subsection{LLD (Low level design)}
+
 \section{Methodology}
 \section{Discussion}
 \section{Conclusion}
